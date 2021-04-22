@@ -24,7 +24,7 @@ jobs:
 
         with:
 
-          name:  Falco-Grice/GabiBraunRobot
+          name:  HuntingBots/GabiBraunRobot
 
           username: ${{ secrets.DOCKER_USERNAME }}
 
