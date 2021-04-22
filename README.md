@@ -9,7 +9,7 @@
 <a href="https://t.me/GabiHelpSupport" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
 
 ### Bot And Channel 
-* Bot Link:  <a href="http://t.me/Gabi_Braun_Robot" alt="GabiBraun"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-princessAsunaRobot-blue" /> </a>
+* Bot Link:  <a href="http://t.me/Gabi_Braun_Robot" alt="GabiBraun"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-GabiBraun-blue" /> </a>
 * Log Channel: <a  href="https://t.me/Gabi_Support_Log" alt="Bot Logs"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-gabibraun%20Log%20Channel-9cf" /> </a>
 
 ### Creating your own modules.
@@ -63,3 +63,6 @@ For starters click on this button
 
 ## Credits,  
 *   [The Ghost Hunter](https://telegram.dog/The_Ghost_Hunter)
+
+## Bot Owner
+*  [Falco Grice](https://telegram.dog/Official_Flying_Titan)
