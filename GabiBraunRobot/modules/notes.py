@@ -3,15 +3,15 @@ from io import BytesIO
 import random
 from typing import Optional
 
-import SaitamaRobot.modules.sql.notes_sql as sql
-from SaitamaRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.handlers import MessageHandlerChecker
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin, connection_status
-from SaitamaRobot.modules.helper_funcs.misc import (build_keyboard,
+import GabiBraunRobot.modules.sql.notes_sql as sql
+from GabiBraunRobot import LOGGER, JOIN_LOGGER, SUPPORT_CHAT, dispatcher, DRAGONS
+from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from GabiBraunRobot.modules.helper_funcs.handlers import MessageHandlerChecker
+from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin, connection_status
+from GabiBraunRobot.modules.helper_funcs.misc import (build_keyboard,
                                                     revert_buttons)
-from SaitamaRobot.modules.helper_funcs.msg_types import get_note_type
-from SaitamaRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
+from GabiBraunRobot.modules.helper_funcs.msg_types import get_note_type
+from GabiBraunRobot.modules.helper_funcs.string_handling import escape_invalid_curly_brackets
 from telegram import (MAX_MESSAGE_LENGTH, InlineKeyboardMarkup, Message,
                       ParseMode, Update, InlineKeyboardButton)
 from telegram.error import BadRequest
