@@ -21,7 +21,7 @@ from GabiBraunRobot.modules.sql import disable_sql as disabledsql
 # from GabiBraunRobot.modules.sql import cust_filters_sql as filtersql
 # import GabiBraunRobot.modules.connectionnRobot.modules.sql.welcome_sql as welcsql
 import GabiBraunRobot.modules.sql.locks_sql as locksql
-from  import connected
+from GabiBraunRobot.modules.connection import connected
 
 
 @run_async
