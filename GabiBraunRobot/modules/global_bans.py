@@ -9,17 +9,17 @@ from telegram.ext import (CallbackContext, CommandHandler, Filters,
                           MessageHandler, run_async)
 from telegram.utils.helpers import mention_html
 
-import SaitamaRobot.modules.sql.global_bans_sql as sql
-from SaitamaRobot.modules.sql.users_sql import get_user_com_chats
-from SaitamaRobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
+import GabiBraunRobot.modules.sql.global_bans_sql as sql
+from GabiBraunRobot.modules.sql.users_sql import get_user_com_chats
+from GabiBraunRobot import (DEV_USERS, EVENT_LOGS, OWNER_ID, STRICT_GBAN, DRAGONS,
                           SUPPORT_CHAT, SPAMWATCH_SUPPORT_CHAT, DEMONS, TIGERS,
                           WOLVES, sw, dispatcher)
-from SaitamaRobot.modules.helper_funcs.chat_status import (is_user_admin,
+from GabiBraunRobot.modules.helper_funcs.chat_status import (is_user_admin,
                                                            support_plus,
                                                            user_admin)
-from SaitamaRobot.modules.helper_funcs.extraction import (extract_user,
+from GabiBraunRobot.modules.helper_funcs.extraction import (extract_user,
                                                           extract_user_and_text)
-from SaitamaRobot.modules.helper_funcs.misc import send_to_list
+from GabiBraunRobot.modules.helper_funcs.misc import send_to_list
 
 GBAN_ENFORCE_GROUP = 6
 
