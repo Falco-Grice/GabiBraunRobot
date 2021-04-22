@@ -5,5 +5,5 @@
 /GabiBraunRobot/modules/blacklistusers.py @rsktg
 /GabiBraunRobot/modules/sql/blacklistusers_sql.py @rsktg
 #pep8-ing the code doesn't change maker
-/AsunaRobot/modules/paste.py @DragSama
+/GabiBraunRobot/modules/paste.py @DragSama
 /tg_bit/modules/speed_test.py @DragSama
