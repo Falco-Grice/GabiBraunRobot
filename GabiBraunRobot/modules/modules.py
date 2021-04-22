@@ -1,11 +1,11 @@
 import importlib
 import collections
 
-from SaitamaRobot import dispatcher, telethn
-from SaitamaRobot.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
+from GabiBraunRobot import dispatcher, telethn
+from GabiBraunRobot.__main__ import (CHAT_SETTINGS, DATA_EXPORT, DATA_IMPORT,
                                    HELPABLE, IMPORTED, MIGRATEABLE, STATS,
                                    USER_INFO, USER_SETTINGS)
-from SaitamaRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
+from GabiBraunRobot.modules.helper_funcs.chat_status import dev_plus, sudo_plus
 from telegram import ParseMode, Update
 from telegram.ext import CallbackContext, CommandHandler, run_async
 
