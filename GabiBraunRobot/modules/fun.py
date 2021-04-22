@@ -8,12 +8,12 @@ from telegram.ext import CallbackContext, run_async
 from tswift import Song
 from telegram.error import BadRequest
 
-import SaitamaRobot.modules.fun_strings as fun_strings
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import send_message, typing_action
-from SaitamaRobot.modules.helper_funcs.chat_status import (is_user_admin)
-from SaitamaRobot.modules.helper_funcs.extraction import extract_user
+import GabiBraunRobot.modules.fun_strings as fun_strings
+from GabiBraunRobot import dispatcher
+from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from GabiBraunRobot.modules.helper_funcs.alternate import send_message, typing_action
+from GabiBraunRobot.modules.helper_funcs.chat_status import (is_user_admin)
+from GabiBraunRobot.modules.helper_funcs.extraction import extract_user
 
 GIF_ID = 'CgACAgQAAx0CSVUvGgAC7KpfWxMrgGyQs-GUUJgt-TSO8cOIDgACaAgAAlZD0VHT3Zynpr5nGxsE'
 
