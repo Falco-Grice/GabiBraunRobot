@@ -77,11 +77,12 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
+GABI_IMG = "https://telegra.ph/file/34175c35a7d981c24db3b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
 You can donate to the original writer of the Base code, Paul
-There are two ways of supporting him; @The_Ghost_Hunter."""
+There are two ways of supporting him;@The_Ghost_Hunter."""
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -190,9 +191,8 @@ def start(update: Update, context: CallbackContext):
         else:
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
-   GABI_IMG =  "https://telegra.ph/file/34175c35a7d981c24db3b.jpg"          
-   
-              PM_START_TEXT.format(
+                SAITAMA_IMG,
+                PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
                 parse_mode=ParseMode.MARKDOWN,
@@ -214,8 +214,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="My Master",
-                             url="https://t.me/Official_Flying_Titan")
+                             text="Ast Group",
+                             url="https://t.me/AnimeSubbingTeam07")
                      ],
                      [
                          InlineKeyboardButton(
