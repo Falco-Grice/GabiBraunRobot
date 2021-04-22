@@ -77,7 +77,6 @@ And the following:
     dispatcher.bot.first_name, ""
     if not ALLOW_EXCL else "\nAll commands can either be used with / or !.\n")
 
-GABI_IMG = "https://telegra.ph/file/34175c35a7d981c24db3b.jpg"
 
 DONATE_STRING = """Heya, glad to hear you want to donate!
 Saitama is hosted on one of Kaizoku's Servers and doesn't require any donations as of now but \
@@ -192,7 +191,8 @@ def start(update: Update, context: CallbackContext):
             first_name = update.effective_user.first_name
             update.effective_message.reply_photo(
                
-                 PM_START_TEXT.format(
+   GABI_IMG = "https://telegra.ph/file/34175c35a7d981c24db3b.jpg"
+              PM_START_TEXT.format(
                     escape_markdown(first_name),
                     escape_markdown(context.bot.first_name)),
                 parse_mode=ParseMode.MARKDOWN,
