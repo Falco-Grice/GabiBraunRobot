@@ -220,7 +220,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Source Code.",
-                             url="https://github.com/LEGEND-BEAST/Gabi-Robot")
+                             url="https://github.com/HuntingBots/GabiBraunRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
