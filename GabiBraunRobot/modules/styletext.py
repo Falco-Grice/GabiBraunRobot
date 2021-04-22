@@ -1,6 +1,6 @@
-from SaitamaRobot import dispatcher
-from SaitamaRobot.modules.disable import DisableAbleCommandHandler
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+from GabiBraunRobot import dispatcher
+from GabiBraunRobot.modules.disable import DisableAbleCommandHandler
+from GabiBraunRobot.modules.helper_funcs.alternate import typing_action
 from telegram import ParseMode
 from telegram.ext import run_async
 
