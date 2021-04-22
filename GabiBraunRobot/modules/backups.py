@@ -5,23 +5,23 @@ from telegram import ParseMode, Message
 from telegram.error import BadRequest
 from telegram.ext import CommandHandler, run_async
 
-import SaitamaRobot.modules.sql.notes_sql as sql
-from SaitamaRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
-from SaitamaRobot.__main__ import DATA_IMPORT
-from SaitamaRobot.modules.helper_funcs.chat_status import user_admin
-from SaitamaRobot.modules.helper_funcs.alternate import typing_action
+import GabiBraunRobot.modules.sql.notes_sql as sql
+from GabiBraunRobot import dispatcher, LOGGER, OWNER_ID, JOIN_LOGGER
+from GabiBraunRobot.__main__ import DATA_IMPORT
+from GabiBraunRobot.modules.helper_funcs.chat_status import user_admin
+from GabiBraunRobot.modules.helper_funcs.alternate import typing_action
 
-# from SaitamaRobot.modules.rules import get_rules
-import SaitamaRobot.modules.sql.rules_sql as rulessql
+# from GabiBraunRobot.modules.rules import get_rules
+import GabiBraunRobot.modules.sql.rules_sql as rulessql
 
-# from SaitamaRobot.modules.sql import warns_sql as warnssql
-import SaitamaRobot.modules.sql.blacklist_sql as blacklistsql
-from SaitamaRobot.modules.sql import disable_sql as disabledsql
+# from GabiBraunRobot.modules.sql import warns_sql as warnssql
+import GabiBraunRobot.modules.sql.blacklist_sql as blacklistsql
+from GabiBraunRobot.modules.sql import disable_sql as disabledsql
 
-# from SaitamaRobot.modules.sql import cust_filters_sql as filtersql
-# import SaitamaRobot.modules.sql.welcome_sql as welcsql
-import SaitamaRobot.modules.sql.locks_sql as locksql
-from SaitamaRobot.modules.connection import connected
+# from GabiBraunRobot.modules.sql import cust_filters_sql as filtersql
+# import GabiBraunRobot.modules.connectionnRobot.modules.sql.welcome_sql as welcsql
+import GabiBraunRobot.modules.sql.locks_sql as locksql
+from  import connected
 
 
 @run_async
@@ -341,7 +341,7 @@ def export_data(update, context):
         reply_to_message_id=msg.message_id,
         parse_mode=ParseMode.MARKDOWN,
     )
-    os.remove("SaitamaRobot{}.backup".format(chat_id))  # Cleaning file
+    os.remove("GabiBraunRobot{}.backup".format(chat_id))  # Cleaning file
 
 
 # Temporary data
@@ -351,7 +351,7 @@ def put_chat(chat_id, value, chat_data):
         status = False
     else:
         status = True
-    chat_data[chat_id] = {"backups": {"status": status, "value": value}}
+    chat_data[chat_id]=  {"backups": {"status": status, "value": value}}
 
 
 def get_chat(chat_id, chat_data):
