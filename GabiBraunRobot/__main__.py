@@ -214,8 +214,8 @@ def start(update: Update, context: CallbackContext):
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Ast Group",
-                             url="https://t.me/AnimeSubbingTeam07")
+                             text="Bot Help Center",
+                             url="https://t.me/@helpcentrebot1")
                      ],
                      [
                          InlineKeyboardButton(
