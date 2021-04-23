@@ -54,7 +54,7 @@ def get_readable_time(seconds: int) -> str:
 PM_START_TEXT = """
 Hi {}, my name is {}! 
 I am an Anime themed group management bot.
-Build by The Ghost Hunter for Falco Grice, I specialize in managing anime and similar themed groups.
+Build by The Ghost Hunter and managed by Falco Grice, I specialize in managing anime and similar themed groups.
 You can find my list of available commands with /help.
 """
 
@@ -209,18 +209,18 @@ def start(update: Update, context: CallbackContext):
                              text="Support Group",
                              url=f"https://t.me/GabiHelpSupport"),
                          InlineKeyboardButton(
-                             text="Log+Update Channel",
+                             text="Log Channel",
                              url="https://t.me/Gabi_Support_Log")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Bot Help Center",
+                             text="Update Channel",
                              url="https://t.me/helpcenterbot1")
                      ],
                      [
                          InlineKeyboardButton(
                              text="Source Code.",
-                             url="https://github.com/HuntingBots/GabiBraunRobot")
+                             url="https://github.com/Falco-Grice/GabiBraunRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
