@@ -215,7 +215,7 @@ def start(update: Update, context: CallbackContext):
                      [
                          InlineKeyboardButton(
                              text="Bot Help Center",
-                             url="https://t.me/@helpcentrebot1")
+                             url="https://t.me/helpcenterbot1")
                      ],
                      [
                          InlineKeyboardButton(
