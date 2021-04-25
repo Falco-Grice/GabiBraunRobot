@@ -58,7 +58,7 @@ For starters click on this button
 ## Our Telegram Channel and Group
 
 * [Support](https://telegram.dog/GabiHelpSupport)
-* [Discussion](https://telegram.dog/helpcentrebot1)
+* [Discussion](https://telegram.dog/helpcenterbot1)
 * [Second Group](https://telegram.dog/Ast_Official_Channel)
 
 ## Credits,  
