@@ -206,25 +206,25 @@ def start(update: Update, context: CallbackContext):
                     ],
                      [
                          InlineKeyboardButton(
-                             text="Support Group",
+                             text="Support🐱Group",
                              url=f"https://t.me/GabiHelpSupport"),
                          InlineKeyboardButton(
-                             text="Log Channel",
-                             url="https://t.me/Gabi_Support_Log")
+                             text="Log📑Channel",
+                             url="https://t.me/GabiBraun_Log")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Update Channel",
-                             url="https://t.me/helpcenterbot1")
+                             text="Update📮Channel",
+                             url="https://t.me/EldianGabi_UpdateChannel")
                      ],
                      [
                          InlineKeyboardButton(
-                             text="Source Code.",
+                             text="Source🗄️Code.",
                              url="https://github.com/Falco-Grice/GabiBraunRobot")
                      ]]))
     else:
         update.effective_message.reply_text(
-            "Jinda Hoon Abhi!\n<b>Up since:</b> <code>{}</code>".format(uptime),
+            "Zinda Hoon Abhi!\n<b>Up since:</b> <code>{}</code>".format(uptime),
             parse_mode=ParseMode.HTML)
 
 
