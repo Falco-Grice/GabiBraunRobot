@@ -22,11 +22,11 @@ def neko(update, context):
     msg.reply_photo(nekos.img(target))
 
 
-#@run_async
-#def feet(update, context):
-#    msg = update.effective_message
-#    target = "feet"
-#    msg.reply_photo(nekos.img(target))
+@run_async
+def feet(update, context):
+    msg = update.effective_message
+    target = "feet"
+    msg.reply_photo(nekos.img(target))
 
 
 #@run_async
@@ -415,7 +415,7 @@ def baka(update, context):
 
 #LEWDKEMO_HANDLER = CommandHandler("lewdkemo", lewdkemo)
 NEKO_HANDLER = CommandHandler("neko", neko)
-#FEET_HANDLER = CommandHandler("feet", feet)
+FEET_HANDLER = CommandHandler("feet", feet)
 #YURI_HANDLER = CommandHandler("yuri", yuri)
 #TRAP_HANDLER = CommandHandler("trap", trap)
 #FUTANARI_HANDLER = CommandHandler("futanari", futanari)
@@ -468,7 +468,7 @@ BAKA_HANDLER = CommandHandler("baka", baka)
 
 #dispatcher.add_handler(LEWDKEMO_HANDLER)
 dispatcher.add_handler(NEKO_HANDLER)
-#dispatcher.add_handler(FEET_HANDLER)
+dispatcher.add_handler(FEET_HANDLER)
 #dispatcher.add_handler(YURI_HANDLER)
 #dispatcher.add_handler(TRAP_HANDLER)
 #dispatcher.add_handler(FUTANARI_HANDLER)
@@ -521,7 +521,7 @@ dispatcher.add_handler(BAKA_HANDLER)
 
 __handlers__ = [
     #NEKO_HANDLER,
-    #FEET_HANDLER,
+    FEET_HANDLER,
     #YURI_HANDLER,
     #TRAP_HANDLER,
     #FUTANARI_HANDLER,
