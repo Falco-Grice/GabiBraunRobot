@@ -210,7 +210,7 @@ def start(update: Update, context: CallbackContext):
                              url=f"https://t.me/GabiHelpSupport"),
                          InlineKeyboardButton(
                              text="Log📑Channel",
-                             url="https://t.me/GabiBraun_Log")
+                             url="https://t.me/Gabi_Support_Log")
                      ],
                      [
                          InlineKeyboardButton(
