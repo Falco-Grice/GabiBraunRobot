@@ -45,3 +45,4 @@ pyrogram
 tgcrypto
 hachoir
 configparser
+cloudscraper
