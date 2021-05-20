@@ -259,7 +259,7 @@ def error_callback(update: Update, context: CallbackContext):
 
 
 @run_async
-def help_button(bot: Bot, update: Update):
+def help_button(update, context):
     query = update.callback_query
     mod_match = re.match(r"help_module\((.+?)\)", query.data)
     prev_match = re.match(r"help_prev\((.+?)\)", query.data)
