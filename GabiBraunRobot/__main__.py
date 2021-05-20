@@ -308,8 +308,9 @@ def help_button(update, context):
             LOGGER.exception("Exception in help buttons. %s", str(query.data))
 
 
+
 @run_async
-def get_help(bot: Bot, update: Update):
+def get_help(update: Update, context: CallbackContext):
     chat = update.effective_chat  # type: Optional[Chat]
     args = update.effective_message.text.split(None, 1)
 
