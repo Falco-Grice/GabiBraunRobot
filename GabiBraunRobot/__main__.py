@@ -404,7 +404,15 @@ def settings_button(update: Update, context: CallbackContext):
             chat = bot.get_chat(chat_id)
             text = "*{}* has the following settings for the *{}* module:\n\n".format(escape_markdown(chat.title),
                                                                                      CHAT_SETTINGS[module].__mod_name__) + \
-                   
+                   CHAT_SETTINGS[module].__chat_settings__(chat_id, user.id)
+            query.message.reply_text(
+                text=text,
+                parse_mode=ParseMode.MARKDOWN,
+                reply_markup=InlineKeyboardMarkup([[
+                    InlineKeyboardButton(
+                        text="Back",
+                        callback_data="stngs_back({})".format(chat_id))
+                ]]))
 
         elif prev_match:
             chat_id = prev_match.group(1)
@@ -544,11 +552,8 @@ def main():
     donate_handler = CommandHandler("donate", donate)
     migrate_handler = MessageHandler(Filters.status_update.migrate,
                                      migrate_chats)
-settings_handler = CommandHandler("settings", get_settings)
-    settings_callback_handler = CallbackQueryHandler(settings_button, pattern=r"stngs_")
-    settings_callback_handler = CallbackQueryHandler(
-        settings_button, pattern=r"stngs_")
 
+    # dispatcher.add_handler(test_handler)
     dispatcher.add_handler(start_handler)
     dispatcher.add_handler(help_handler)
     dispatcher.add_handler(settings_handler)
