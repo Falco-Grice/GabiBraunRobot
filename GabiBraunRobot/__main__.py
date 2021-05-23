@@ -62,7 +62,7 @@ You can find my list of available commands with! Hit` *🔐Commands*
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD YONE TO YOUR GROUP ➕️",url="t.me/Gabi_Braun_Robot?startgroup=true"),
+            text="➕️ ADD GABI TO YOUR GROUP ➕️",url="t.me/Gabi_Braun_Robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(
@@ -70,7 +70,7 @@ buttons = [
      
     ],
     [     InlineKeyboardButton(
-            text="🎦 H.S.A Channel", url="https://telegram.dog/Hindisubsanimes"),
+            text="🎦 H.S.A Group", url="https://telegram.dog/Hindisubsanimes"),
     
     ],
     [
