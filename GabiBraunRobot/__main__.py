@@ -56,7 +56,7 @@ PM_START_TEXT = """
 `Hey There!` [👩‍💼](https://telegra.ph/file/0ed48df18f4175d61b5d8.jpg) `My name is` *Gabi Braun*
 `I am an Anime Themed group management bot.
 Build by The Ghost Hunter and managed by Falco Grice for Your Telegram Group , I specialize in managing anime and similar themed groups.
-You can find my list of available commands with! Hit` *📚Commands*   
+You can find my list of available commands with! Hit` *🔐Commands*   
 """
 
 buttons = [
