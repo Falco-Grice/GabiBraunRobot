@@ -1,6 +1,7 @@
 import os
 import math
 import requests
+import cloudscraper
 import urllib.request as urllib
 from PIL import Image
 from html import escape
@@ -22,17 +23,18 @@ def stickerid(update: Update, context: CallbackContext):
     msg = update.effective_message
     if msg.reply_to_message and msg.reply_to_message.sticker:
         update.effective_message.reply_text(
-            "Hello " +
-            f"{mention_html(msg.from_user.id, msg.from_user.first_name)}" +
-            ", The sticker id you are replying is :\n <code>" +
-            escape(msg.reply_to_message.sticker.file_id) + "</code>",
+            "Hello "
+            + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
+            + ", The sticker id you are replying is :\n <code>"
+            + escape(msg.reply_to_message.sticker.file_id)
+            + "</code>",
             parse_mode=ParseMode.HTML,
         )
     else:
         update.effective_message.reply_text(
-            "Hello " +
-            f"{mention_html(msg.from_user.id, msg.from_user.first_name)}" +
-            ", Please reply to sticker message to get id sticker",
+            "Hello "
+            + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
+            + ", Please reply to sticker message to get id sticker",
             parse_mode=ParseMode.HTML,
         )
 
@@ -40,23 +42,24 @@ def stickerid(update: Update, context: CallbackContext):
 @run_async
 def cb_sticker(update: Update, context: CallbackContext):
     msg = update.effective_message
-    split = msg.text.split(' ', 1)
+    split = msg.text.split(" ", 1)
     if len(split) == 1:
-        msg.reply_text('Provide some name to search for pack.')
+        msg.reply_text("Provide some name to search for pack.")
         return
-    text = requests.get(combot_stickers_url + split[1]).text
-    soup = bs(text, 'lxml')
-    results = soup.find_all("a", {'class': "sticker-pack__btn"})
+
+    scraper = cloudscraper.create_scraper()
+    text = scraper.get(combot_stickers_url + split[1]).text
+    soup = bs(text, "lxml")
+    results = soup.find_all("a", {"class": "sticker-pack__btn"})
     titles = soup.find_all("div", "sticker-pack__title")
     if not results:
-        msg.reply_text('No results found :(.')
+        msg.reply_text("No results found :(.")
         return
     reply = f"Stickers for *{split[1]}*:"
     for result, title in zip(results, titles):
-        link = result['href']
+        link = result["href"]
         reply += f"\n• [{title.get_text()}]({link})"
     msg.reply_text(reply, parse_mode=ParseMode.MARKDOWN)
-
 
 def getsticker(update: Update, context: CallbackContext):
     bot = context.bot
@@ -70,37 +73,9 @@ def getsticker(update: Update, context: CallbackContext):
         os.remove("sticker.png")
     else:
         update.effective_message.reply_text(
-            "Please reply to a sticker for me to upload its PNG.")
-
-@run_async
-def getsticker(update, context):
-    msg = update.effective_message
-    chat_id = update.effective_chat.id
-    if msg.reply_to_message and msg.reply_to_message.sticker:
-        context.bot.sendChatAction(chat_id, "typing")
-        update.effective_message.reply_text(
-            "Hello"
-            + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
-            + ", Please check the file you requested below."
-            "\nPlease use this feature wisely!",
-            parse_mode=ParseMode.HTML,
+            "Please reply to a sticker for me to upload its PNG."
         )
-        context.bot.sendChatAction(chat_id, "upload_document")
-        file_id = msg.reply_to_message.sticker.file_id
-        newFile = context.bot.get_file(file_id)
-        newFile.download("sticker.png")
-        context.bot.sendDocument(chat_id, document=open("sticker.png", "rb"))
-        context.bot.sendChatAction(chat_id, "upload_photo")
-        context.bot.send_photo(chat_id, photo=open("sticker.png", "rb"))
 
-    else:
-        context.bot.sendChatAction(chat_id, "typing")
-        update.effective_message.reply_text(
-            "Hello"
-            + f"{mention_html(msg.from_user.id, msg.from_user.first_name)}"
-            + ", Please reply to sticker message to get sticker image",
-            parse_mode=ParseMode.HTML,
-        )
 
 @run_async
 def kang(update: Update, context: CallbackContext):
@@ -477,12 +452,10 @@ def makepack_internal(
 
 
 __help__ = """
-• `/stickerid`*:* reply to a sticker to me to tell you its file ID.
-• `/getsticker`*:* reply to a sticker to me to upload its raw PNG file.
-• `/kang`*:* reply to a sticker to add it to your pack.
-• `/stickers`*:* Find stickers for given term on combot sticker catalogue
-• `/getsticker`*:* Reply to a sticker to me to upload its raw PNG file.
-• `/q`*:* Reply to a message to me to upload its quote.
+ ❍ /stickerid*:* reply to a sticker to me to tell you its file ID.
+ ❍ /getsticker*:* reply to a sticker to me to upload its raw PNG file.
+ ❍ /kang*:* reply to a sticker to add it to your pack.
+ ❍ /stickers*:* Find stickers for given term on combot sticker catalogue
 """
 
 __mod_name__ = "Stickers"
@@ -490,10 +463,8 @@ STICKERID_HANDLER = DisableAbleCommandHandler("stickerid", stickerid)
 GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 KANG_HANDLER = DisableAbleCommandHandler("kang", kang, admin_ok=True)
 STICKERS_HANDLER = DisableAbleCommandHandler("stickers", cb_sticker)
-GETSTICKER_HANDLER = DisableAbleCommandHandler("getsticker", getsticker)
 
 dispatcher.add_handler(STICKERS_HANDLER)
 dispatcher.add_handler(STICKERID_HANDLER)
 dispatcher.add_handler(GETSTICKER_HANDLER)
 dispatcher.add_handler(KANG_HANDLER)
-dispatcher.add_handler(GETSTICKER_HANDLER)
