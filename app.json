@@ -1,15 +1,15 @@
 {
-      "name": "SnowWhiteRobot",
+      "name": "GabiBraunRobot",
       "description": "An Anime themed Telegram group management bot.",
       "keywords": [
          "telegram",
          "anime",
          "group",
          "manager",
-         "SnowWhite"
+         "Gabi"
       ],   
-  "logo":    "https://telegra.ph/file/a97da8360ef580eea4251.jpg",
- "repository": "https://github.com/HuntingBots/SnowWhiteRobot",
+  "logo":    "https://telegra.ph/file/8685d1a61894086a63df8.jpg",
+ "repository": "https://github.com/Falco-GricGabiBraunRobot",
 
 "addons": [
       {
@@ -43,26 +43,26 @@
       "OWNER_ID": {
          "description": "Your user ID as an integer.",
          "required": true,
-         "value": "1606221784"
+         "value": "1610284626"
       },
       "OWNER_USERNAME": {
          "description": "Your username without the @",
-         "value": "The_Ghosht_Hunter"
+         "value": "One_Eyed_Ghouls_Kingq"
       },
       "SUPPORT_CHAT": {
          "description": "Your Telegram support group chat username where your users will go and bother you with shit But be like: MyGroupChatUsernameBlah. If this ever points to saitama support than consider you made an enemy.",
          "required": true,
-         "value": "snow_white_support"
+         "value": "GabiHelpSupport"
       },
       "EVENT_LOGS": {
          "description": "Event logs channel to note down important bot level events, recommend to make this public. ex: '-123456'",
          "required": true,
-         "value": "@robot_snow_white"
+         "value": "-123456789"
       },
       "JOIN_LOGGER": {
          "description": "A channel where bot will print who added it to what group, useful during debugging or spam handling.",
          "required": true,
-         "value": "@robot_snow_white"
+         "value": "-123456789"
       },      
       "CASH_API_KEY": {
          "description": "Required for currency converter. Get yours from https://www.alphavantage.co/support/#api-key",
