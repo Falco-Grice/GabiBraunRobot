@@ -2,7 +2,7 @@
   <img src="https://telegra.ph/file/0ed48df18f4175d61b5d8.jpg">
 </p>
 
-## Gabi Braun Robot 
+## THUNDER Robot 
 
 ### Telegram Group
 <p align="left">
@@ -10,7 +10,7 @@
 
 ### Bot And Channel 
 * Bot Link:  <a href="http://t.me/Gabi_Braun_Robot" alt="GabiBraun"> <img src="https://img.shields.io/badge/%F0%9F%A4%96%20-GabiBraun-blue" /> </a>
-* Log Channel: <a  href="https://t.me/Gabi_Support_Log" alt="Bot Logs"> <img  src="https://img.shields.io/badge/%F0%9F%92%A1-gabibraun%20Log%20Channel-9cf" /> </a>
+
 
 ### Creating your own modules.
 
@@ -52,17 +52,15 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 ## How to setup on Heroku 
 For starters click on this button 
 
-<p align="center"><a href="https://heroku.com/deploy?template=https://github.com/Falco-Grice/GabiBraunRobot"> <img src="https://img.shields.io/badge/Deploy%20To%20Heroku-black?style=for-the-badge&logo=heroku" width="220" height="38.45"/></a></p>
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 
 ## Our Telegram Channel and Group
 
 * [Support](https://telegram.dog/GabiHelpSupport)
-* [Discussion](https://telegram.dog/helpcenterbot1)
-* [Second Group](https://telegram.dog/Ast_Official_Channel)
 
 ## Credits,  
-*   [The Ghost Hunter](https://telegram.dog/The_Ghost_Hunter)
+*   [Eren Jaeger](https://telegram.dog/FoundingTitanPrem)
 
 ## Bot Owner
-*  [Falco Grice](https://telegram.dog/Official_Flying_Titan)
+*  [Eren Jaeger](https://telegram.dog/FoundingTitanPrem
