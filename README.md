@@ -50,7 +50,7 @@ For queries or any issues regarding the bot please open an issue ticket or visit
 <a href="https://t.me/GabiHelpSupport" alt="Telegram!"> <img src="https://aleen42.github.io/badges/src/telegram.svg" /> </a>
 
 ## How to setup on Heroku 
-For starters click on this button 
+[![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
 [![Deploy](https://www.herokucdn.com/deploy/button.svg)](https://heroku.com/deploy)
 
