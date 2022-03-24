@@ -111,9 +111,7 @@ buttons = [
     
 ]
 
-TIANA_IMG = f"{START_IMG}"
-TIANA_VIDA = f"{BOT_TUT}"
-TIANA_VIDB = f"{MUSICBOT_TUT}"
+TIANA_IMG = f"{START_IMG}
 
 HELP_STRINGS = """*Click on the Buttons Bellow to get Documention about Specific Modules*"""
 
