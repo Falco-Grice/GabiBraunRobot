@@ -5,31 +5,9 @@ from sys import argv
 from typing import Optional
 import GabiBraunRobot.modules.sql.users_sql as sql
 
-from GabiBraunRobot import (
-    ALLOW_EXCL,
-    CERT_PATH,
-    DONATION_LINK,
-    LOGGER,
-    OWNER_ID,
-    PORT,
-    BOT_TUT,
-    MUSICBOT_TUT,
-    UPDATE_CHANNEL,
-    BOT_USERNAME,
-    BOT_NAME,
-    ASS_USERNAME,
-    START_IMG,
-    TOKEN,
-    URL,
-    OWNER_USERNAME,
-    WEBHOOK,
-    SUPPORT_CHAT,
-    dispatcher,
-    StartTime,
-    telethn,
-    pbot,
-    updater,
-)
+from GabiBraunRobot import (ALLOW_EXCL, CERT_PATH, DONATION_LINK, LOGGER,
+                          OWNER_ID, PORT, SUPPORT_CHAT, TOKEN, URL, WEBHOOK,
+                          dispatcher, StartTime, telethn, updater, pgram)
 
 # needed to dynamically load modules
 # NOTE: Module order is not guaranteed, specify that in the config file!
